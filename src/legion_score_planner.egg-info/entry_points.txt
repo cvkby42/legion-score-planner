@@ -1,0 +1,2 @@
+[console_scripts]
+legion-score-planner = score_planner.planner:main

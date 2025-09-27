@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/legion_score_planner.egg-info/PKG-INFO
+src/legion_score_planner.egg-info/SOURCES.txt
+src/legion_score_planner.egg-info/dependency_links.txt
+src/legion_score_planner.egg-info/entry_points.txt
+src/legion_score_planner.egg-info/top_level.txt
+src/score_planner/__init__.py
+src/score_planner/planner.py
+tests/test_planner.py
