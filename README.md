@@ -1,0 +1,50 @@
+# Legion Score Planner (Heuristic)
+
+A small **educational** CLI and Python module that helps you **plan** improvements to your *Legion Score* based on public descriptions of Legion's merit-based approach.  
+**Not affiliated with Legion**. **Not financial advice.** This tool **does not** attempt to reverse-engineer Legion’s scoring; it uses a transparent, heuristic model.
+
+## What it does
+
+- Lets you input your current component scores (e.g., *Wallet/On-chain*, *Social*, *Builder/Contributor*).
+- Suggests **action steps** to improve your overall score target (e.g., 700 → 800).
+- Exports a simple **action plan** as JSON/Markdown.
+
+> The real Legion Score lives on [legion.cc](https://legion.cc) and may include more factors and dynamic rules. Use this as a planning aid only.
+
+## Install
+
+```bash
+pip install -e .
+```
+
+Or run locally without installing:
+
+```bash
+python -m score_planner --help
+```
+
+## Examples
+
+```bash
+python -m score_planner --wallet 350 --social 220 --builder 120 --target 800 --export plan.md
+```
+
+## Heuristic model (transparent)
+
+We model three components (sum capped at 1000):
+
+- **Wallet (On-chain Activity)**: 0–500
+- **Social (Community signal)**: 0–300
+- **Builder (Open-source / credentials)**: 0–300
+
+You can change weights/limits via `score_planner/config.json` (created at first run).
+
+## Safety & Terms
+
+- Don’t spam, Sybil, or automate rule-breaking behavior on any platform.
+- Read and follow the **Terms of Service** of Legion, GitHub, X/Twitter, Discord, and any connected apps.
+- This repo is for **learning** and open-source experimentation only.
+
+## License
+
+MIT

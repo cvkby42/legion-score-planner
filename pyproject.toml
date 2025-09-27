@@ -1,0 +1,15 @@
+[project]
+name = "legion-score-planner"
+version = "0.1.0"
+description = "Heuristic planner to improve a Legion-style merit score (educational)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [{name = "Your Name"}]
+dependencies = []
+
+[project.scripts]
+legion-score-planner = "score_planner.planner:main"
+
+[tool.pytest.ini_options]
+addopts = "-q"
